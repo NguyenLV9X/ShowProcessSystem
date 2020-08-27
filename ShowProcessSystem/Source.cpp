@@ -2,5 +2,8 @@
 
 int main()
 {
+	ProcessExplorer app;
+	app.start();
+
 	return 0;
 }

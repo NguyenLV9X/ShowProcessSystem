@@ -8,8 +8,11 @@ class ProcessExplorer
 {
 private:
 	map<DWORD, PROCESSENTRY32> mapProcesses;
-public:
 	bool set_processes();
+	void show_processes();
+	void show_child(DWORD ID, int level);
+public:
+	void start();
 	ProcessExplorer();
 	~ProcessExplorer();
 };
